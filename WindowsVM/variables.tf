@@ -27,7 +27,7 @@ variable "VM-user" {
   default = "Mahmoud"
 }
 variable "VM-user-password" {
-  type = string
+  type    = string
   default = "P@ssw0rd123@"
 }
 variable "VM-storage-account" {

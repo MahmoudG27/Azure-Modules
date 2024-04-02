@@ -3,22 +3,19 @@ variable "RG-name" {
   default     = "MG"
   description = "Resource Group Name"
 }
-
 variable "RG-location" {
   type        = string
   default     = "North Europe"
   description = "Resource Group Location"
 }
 
-################################
-
-variable "ACR-name" {
+variable "vault-name" {
   type        = string
-  default     = "MGDemo"
-  description = "ACR Name"
+  default     = "demo"
+  description = "Specifies the name of the Key Vault"
 }
-
-variable "ACR-sku" {
-  type    = string
-  default = "Premium"
+variable "vault-sku" {
+  type        = string
+  default     = "Standard"
+  description = "The Name of the SKU used for this Key Vault"
 }

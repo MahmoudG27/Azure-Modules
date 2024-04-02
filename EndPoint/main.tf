@@ -7,7 +7,7 @@ resource "azurerm_private_endpoint" "private-endpoint" {
   private_service_connection {
     name                           = "Private-Connection"
     private_connection_resource_id = var.resource-assoicated-id
-    subresource_names              = [ var.subresource-name ]
+    subresource_names              = [var.subresource-name]
     is_manual_connection           = false
   }
   ip_configuration {

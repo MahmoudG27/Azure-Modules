@@ -8,15 +8,9 @@ variable "RG-location" {
   default     = "North Europe"
   description = "Resource Group Location"
 }
-variable "Public-ip" {
-  type = string
-}
 
-variable "lb-name" {
-  type    = string
-  default = "MG"
-}
-variable "lb-sku" {
-  type    = string
-  default = "Standard"
+variable "frontdoor-name" {
+  type        = string
+  default     = "demomgmg"
+  description = "Specifies the name of the Front Door service. Must be globally unique"
 }

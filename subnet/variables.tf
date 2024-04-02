@@ -1,16 +1,16 @@
 variable "RG-name" {
-  type    = string
-  default = "MG"
+  type        = string
+  default     = "MG"
   description = "Resource Group Name"
 }
 
 variable "RG-location" {
-  type    = string
-  default = "North Europe"
+  type        = string
+  default     = "North Europe"
   description = "Resource Group Location"
 }
 variable "Vnet-name" {
-  type    = string
+  type = string
 }
 
 ################################

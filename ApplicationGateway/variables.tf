@@ -1,18 +1,18 @@
 variable "RG-name" {
-  type    = string
-  default = "MG"
+  type        = string
+  default     = "MG"
   description = "Resource Group Name"
 }
 variable "RG-location" {
-  type    = string
-  default = "North Europe"
+  type        = string
+  default     = "North Europe"
   description = "Resource Group Location"
 }
 variable "Public-ip" {
   type = string
 }
 variable "Subnet-id" {
-  type    = string
+  type = string
 }
 
 variable "Gateway-name" {

@@ -7,12 +7,12 @@ variable "RG-location" {
   default = "North Europe"
 }
 variable "Subnet-id" {
-  type    = string
+  type = string
 }
 ################################
 
 variable "Nic-name" {
-  type = string
+  type    = string
   default = "Mg-NIC"
 }
 variable "Nic-PrivateIP" {

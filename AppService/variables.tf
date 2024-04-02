@@ -8,15 +8,8 @@ variable "RG-location" {
   default     = "North Europe"
   description = "Resource Group Location"
 }
-variable "Public-ip" {
-  type = string
-}
 
-variable "lb-name" {
+variable "plan-name" {
   type    = string
-  default = "MG"
-}
-variable "lb-sku" {
-  type    = string
-  default = "Standard"
+  default = "demo"
 }

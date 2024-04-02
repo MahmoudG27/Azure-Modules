@@ -1,6 +1,6 @@
 variable "RG-name" {
-  type    = string
-  default = "MG"
+  type        = string
+  default     = "MG"
   description = "Resource Group Name"
 }
 ################################
