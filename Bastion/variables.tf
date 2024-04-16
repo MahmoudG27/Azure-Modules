@@ -1,13 +1,13 @@
 variable "RG-name" {
   type        = string
   default     = "MG"
-  description = "Resource Group Name"
+  description = "The name of the resource group in which to create the Bastion Host"
 }
 
 variable "RG-location" {
   type        = string
   default     = "North Europe"
-  description = "Resource Group Location"
+  description = "Specifies the supported Azure location where the resource exists"
 }
 
 variable "Subnet-id" {

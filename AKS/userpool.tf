@@ -1,6 +1,6 @@
 resource "azurerm_kubernetes_cluster_node_pool" "userpool" {
   name                  = var.UserPool-name
-  kubernetes_cluster_id = azurerm_kubernetes_cluster.rabbit-aks.id
+  kubernetes_cluster_id = azurerm_kubernetes_cluster.MG-aks.id
   vm_size               = var.UserPool-VMsize
   mode                  = "User"
   zones                 = ["1", "2", "3"]

@@ -1,5 +1,5 @@
 #Create Private Network Interface for GitHub Runner VM
-resource "azurerm_network_interface" "MG-Nic" {
+resource "azurerm_network_interface" "MG-NIC" {
   name                = var.Nic-name
   resource_group_name = var.RG-name
   location            = var.RG-location

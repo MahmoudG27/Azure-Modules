@@ -4,11 +4,11 @@ resource "azurerm_network_security_group" "MG-NSG" {
   resource_group_name = var.RG-name
 
   security_rule {
-    name                       = "test123"
-    priority                   = 100
-    direction                  = "Inbound"
-    access                     = "Allow"
-    protocol                   = "Tcp"
+    name                       = var.rule-name
+    priority                   = var.rule-priority
+    direction                  = var.rule-direction
+    access                     = var.rule-access
+    protocol                   = var.rule-protocol
     source_port_range          = "*"
     destination_port_range     = "*"
     source_address_prefix      = "*"

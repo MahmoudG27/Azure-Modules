@@ -6,7 +6,7 @@ resource "azurerm_lb" "MG-lb" {
 
   frontend_ip_configuration {
     name                 = "lbfrontendip"
-    public_ip_address_id = var.Public-ip
+    public_ip_address_id = var.PublicIP-id
   }
 }
 #Create Loadbalancing Rules

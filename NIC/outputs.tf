@@ -1,3 +1,3 @@
-output "mg-Nic-id" {
-  value = [azurerm_network_interface.mg-nic.id]
+output "Nic-id" {
+  value = [ azurerm_network_interface.MG-NIC.id ]
 }

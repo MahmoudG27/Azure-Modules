@@ -1,5 +1,5 @@
 # Azure Container Registry
-resource "azurerm_container_registry" "Rabbit-ACR" {
+resource "azurerm_container_registry" "MG-ACR" {
   name                          = var.ACR-name
   resource_group_name           = var.RG-name
   location                      = var.RG-location

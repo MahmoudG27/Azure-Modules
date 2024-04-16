@@ -1,12 +1,7 @@
 variable "RG-name" {
   type        = string
   default     = "MG"
-  description = "Resource Group Name"
-}
-variable "RG-location" {
-  type        = string
-  default     = "North Europe"
-  description = "Resource Group Location"
+  description = "Specifies the name of the Resource Group in which the Front Door service should exist"
 }
 
 variable "frontdoor-name" {

@@ -17,9 +17,9 @@ resource "azurerm_linux_virtual_machine" "Linux-VM" {
   }
 
   source_image_reference {
-    publisher = "Canonical"
-    offer     = "0001-com-ubuntu-server-jammy"
+    publisher = var.VM-publisher
+    offer     = var.VM-offer
     sku       = var.VM-sku
-    version   = "latest"
+    version   = var.VM-version
   }
 }

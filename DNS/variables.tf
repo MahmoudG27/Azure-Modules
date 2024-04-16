@@ -1,12 +1,11 @@
 variable "RG-name" {
   type        = string
   default     = "MG"
-  description = "Resource Group Name"
+  description = "Specifies the resource group where the resource exists"
 }
-################################
 
-# Private DNS Name for ACR
 variable "DNS-name" {
   type    = string
   default = "demo.mg.io"
+  description = "The name of the DNS Zone. Must be a valid domain name"
 }

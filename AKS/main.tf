@@ -1,19 +1,19 @@
 # azurerm_kubernetes_cluster
-resource "azurerm_kubernetes_cluster" "rabbit-aks" {
+resource "azurerm_kubernetes_cluster" "MG-aks" {
   automatic_channel_upgrade         = "patch"
   azure_policy_enabled              = true
-  dns_prefix                        = "rabbit-dns"
+  dns_prefix                        = "mg-dns"
   http_application_routing_enabled  = false
-  kubernetes_version                = var.K8s-version
+  kubernetes_version                = var.AKS-version
   local_account_disabled            = false
   resource_group_name               = var.RG-name
   location                          = var.RG-location
-  name                              = var.K8s-name
+  name                              = var.AKS-name
   node_resource_group               = var.Node-RG
   private_cluster_enabled           = true
   private_dns_zone_id               = "System"
   role_based_access_control_enabled = true
-  sku_tier                          = var.K8s-sku
+  sku_tier                          = var.AKS-sku
   support_plan                      = "KubernetesOfficial"
 
   default_node_pool {

@@ -1,13 +1,13 @@
 variable "RG-name" {
   type        = string
   default     = "MG"
-  description = "Resource Group Name"
+  description = "The name of the resource group in which to create the storage account"
 }
 
 variable "RG-location" {
   type        = string
   default     = "North Europe"
-  description = "Resource Group Location"
+  description = " Specifies the supported Azure location where the resource exists"
 }
 
 variable "SA-name" {
@@ -19,7 +19,7 @@ variable "SA-name" {
 variable "SA-tier" {
   type        = string
   default     = "Standard"
-  description = "Defines the Kind of account"
+  description = " Defines the Tier to use for this storage account. Valid options are Standard and Premium. For BlockBlobStorage and FileStorage accounts only Premium is valid"
 }
 
 variable "SA-replication" {
@@ -31,7 +31,7 @@ variable "SA-replication" {
 variable "SA-kind" {
   type        = string
   default     = "Storage_V2"
-  description = "Defines the Kind of account"
+  description = "Defines the Kind of account. Valid options are BlobStorage, BlockBlobStorage, FileStorage, Storage and StorageV2"
 }
 
 variable "container-name" {

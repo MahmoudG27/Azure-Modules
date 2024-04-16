@@ -1,36 +1,36 @@
 variable "RG-name" {
   type        = string
   default     = "MG"
-  description = "Resource Group Name"
+  description = "Specifies the Name of the Resource Group within which the Private Endpoint should exist"
 }
 
 variable "RG-location" {
   type        = string
   default     = "North Europe"
-  description = "Resource Group Location"
+  description = "The supported Azure location where the resource exists"
 }
 
 variable "InfraSubnet-id" {
   type        = string
-  description = "Subnet will assoicate the private Endpoint to it"
+  description = "The ID of the Subnet from which Private IP Addresses will be allocated for this Private Endpoint"
 }
 
 variable "resource-assoicated-id" {
   type        = string
-  description = "The Resource will assoicate to Private EndPoint"
+  description = "The ID of the Private Link Enabled Remote Resource which this Private Endpoint should be connected to"
 }
 
 ################################
 
 variable "EndPoint-name" {
   type        = string
-  description = "EndPoint Name"
+  description = "Specifies the Name of the Private Endpoint"
 }
 variable "EndPoint-private-ip" {
   type        = string
-  description = "Private IP for EndPoint"
+  description = "Specifies the static IP address within the private endpoint's subnet to be used"
 }
 variable "subresource-name" {
   type        = string
-  description = "The Subresource of The Resource will assoicate ex. (blob - Server - ...)"
+  description = "A list of subresource names which the Private Endpoint is able to connect to" 
 }

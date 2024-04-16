@@ -1,3 +1,3 @@
-output "Flexbile-MySQL-id" {
-  value = azurerm_mysql_flexible_server.MySQL-server.id
+output "Flexbile-PostgreSQL-id" {
+  value = azurerm_postgresql_flexible_server.MG-PostgreSQL.id
 }

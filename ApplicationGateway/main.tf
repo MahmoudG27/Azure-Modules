@@ -19,7 +19,7 @@ resource "azurerm_application_gateway" "MG-gateway" {
   frontend_ip_configuration {
     name                          = "appGatewayFrontendIP"
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id          = var.Public-ip
+    public_ip_address_id          = var.PublicIP-id
   }
 
   frontend_port {

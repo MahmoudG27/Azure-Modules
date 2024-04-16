@@ -1,25 +1,23 @@
 variable "RG-name" {
   type        = string
   default     = "MG"
-  description = "Resource Group Name"
+  description = "The name of the resource group in which to create the subnet"
 }
 
-variable "RG-location" {
-  type        = string
-  default     = "North Europe"
-  description = "Resource Group Location"
-}
 variable "Vnet-name" {
   type = string
+  description = "The name of the virtual network to which to attach the subne"
 }
 
-################################
-# Infra Subnet
+
 variable "Subnet-Name" {
   type    = string
   default = "infra"
+  description = "The name of the subnet"
 }
+
 variable "Subnet-address" {
   type    = string
   default = "10.224.0.0/16"
+  description = "The address prefixes to use for the subnet"
 }

@@ -1,24 +1,24 @@
 variable "RG-name" {
   type        = string
   default     = "MG"
-  description = "Resource Group Name"
+  description = "The name of the resource group in which to create the Container Registry"
 }
 
 variable "RG-location" {
   type        = string
   default     = "North Europe"
-  description = "Resource Group Location"
+  description = "Specifies the supported Azure location where the resource exists"
 }
 
-################################
 
 variable "ACR-name" {
   type        = string
   default     = "MGDemo"
-  description = "ACR Name"
+  description = "Specifies the name of the Container Registry"
 }
 
 variable "ACR-sku" {
   type    = string
   default = "Premium"
+  description = "The SKU name of the container registry"
 }

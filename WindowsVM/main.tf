@@ -17,6 +17,6 @@ resource "azurerm_windows_virtual_machine" "Windows-VM" {
     publisher = var.VM-publisher
     offer     = var.VM-offer
     sku       = var.VM-sku
-    version   = "latest"
+    version   = var.VM-version
   }
 }
