@@ -1,11 +1,10 @@
 resource "azurerm_orchestrated_virtual_machine_scale_set" "VMSS" {
     name                          = var.VMSS-name
-    instances                     = 2
     location                      = var.RG-location
-    max_bid_price                 = -1
+    resource_group_name           = var.RG-name
+    instances                     = 2
     platform_fault_domain_count   = 1
     priority                      = "Regular"
-    resource_group_name           = var.RG-name
     sku_name                      = "Standard_DS1_v2"
     zones                         = ["1"]
 
@@ -20,15 +19,6 @@ resource "azurerm_orchestrated_virtual_machine_scale_set" "VMSS" {
             primary                                      = true
             subnet_id                                    = var.subnet-id
             version                                      = "IPv4"
-
-            public_ip_address {
-                domain_name_label       = null
-                idle_timeout_in_minutes = 15
-                name                    = "publicIp-test-vnet-nic01"
-                public_ip_prefix_id     = null
-                sku_name                = null
-                version                 = "IPv4"
-            }
         }
     }
 
