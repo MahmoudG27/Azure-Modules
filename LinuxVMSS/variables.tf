@@ -13,64 +13,67 @@ variable "NIC-PrivateIP" {
   description = " A list of Network Interface IDs which should be attached to this Virtual Machine"
 }
 
-################################
+variable "subnet-id" {
+  type = string
+  description = " A list of Network Interface IDs which should be attached to this Virtual Machine"
+}
 
-# VM Variables
-variable "VM-name" {
+# VMSS Variables
+variable "VMSS-name" {
   type    = string
   default = "MG"
   description = "The name of the Linux Virtual Machine"
 }
 
-variable "VM-size" {
+variable "VMSS-size" {
   type    = string
   default = "Standard_F2"
   description = "The SKU which should be used for this Virtual Machine, such as Standard_F2"
 }
 
-variable "VM-user" {
+variable "VMSS-user" {
   type    = string
   default = "Mahmoud"
   description = "The username of the local administrator used for the Virtual Machine."
 }
 
-variable "VM-user-password" {
+variable "VMSS-user-password" {
   type    = string
   default = "P@ssw0rd123@"
   description = "The Password which should be used for the local-administrator on this Virtual Machine"
 }
 
-variable "VM-storage-account" {
+variable "VMSS-storage-account" {
   type    = string
-  default = "Standard_LRS"
+  default = "Premium_LRS"
   description = "The Type of Storage Account which should back this the Internal OS Disk. Possible values are Standard_LRS, StandardSSD_LRS, Premium_LRS, StandardSSD_ZRS and Premium_ZRS"
 }
 
-variable "VM-disk-size" {
+variable "VMSS-disk-size" {
   type    = number
   default = 64
   description = "The Size of the Internal OS Disk in GB"
 }
 
-variable "VM-publisher" {
+variable "VMSS-publisher" {
   type    = string
   default = "Canonical"
   description = "Specifies the SKU of the image used to create the virtual machines"
 }
 
-variable "VM-offer" {
+variable "VMSS-offer" {
   type    = string
   default = "0001-com-ubuntu-server-jammy"
   description = "Specifies the SKU of the image used to create the virtual machines"
 }
 
-variable "VM-sku" {
+variable "VMSS-sku" {
   type    = string
   default = "22_04-lts"
   description = "Specifies the SKU of the image used to create the virtual machines"
 }
 
-variable "VM-version" {
+variable "VMSS-version" {
   type    = string
   default = "latest"
   description = "Specifies the SKU of the image used to create the virtual machines"

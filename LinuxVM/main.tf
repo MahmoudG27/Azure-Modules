@@ -8,7 +8,7 @@ resource "azurerm_linux_virtual_machine" "Linux-VM" {
   computer_name                   = "MG"
   disable_password_authentication = false
   zone                            = 1
-  network_interface_ids           = var.Runner-PrivateIP
+  network_interface_ids           = var.NIC-PrivateIP
 
   os_disk {
     caching              = "ReadWrite"
